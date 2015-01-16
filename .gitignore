@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+
+
+
+>>>>>>> b79c89c65759068eb1f43852b1c2d559b8760835
 /build
 /src/androidTest
 # built application files
@@ -32,8 +44,13 @@ build/
 /local.properties
 /*/local.properties
 /*/out
+<<<<<<< HEAD
 ///build
 ///production
+=======
+/*/*/build
+/*/*/production
+>>>>>>> b79c89c65759068eb1f43852b1c2d559b8760835
 *.iml
 *~
 *.swp
@@ -42,6 +59,11 @@ build/
 
 # backup files
 *.bak
+<<<<<<< HEAD
  Sent at 12:09 PM on Friday
  
+=======
+
+
+>>>>>>> b79c89c65759068eb1f43852b1c2d559b8760835
 

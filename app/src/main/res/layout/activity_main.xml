@@ -26,11 +26,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txt_message"
-        android:id="@+id/btn_click_here"
-        android:text="click here"
+        android:id="@+id/btn_click_here1"
+        android:text="click here1"
         android:layout_marginTop="10dp"
         android:background="#f2000000"
         android:textColor="#fff"
         />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_click_here1"
+        android:id="@+id/btn_click_here2"
+        android:text="click here2"
+        android:layout_marginTop="10dp"
+        android:background="#f2000000"
+        android:textColor="#fff"
+        />
+
+
 
 </RelativeLayout>

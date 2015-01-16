@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<<<<<<< HEAD
-    <string name="app_name">GItflowTest</string>
-=======
     <string name="app_name">GitflowTest</string>
->>>>>>> b79c89c65759068eb1f43852b1c2d559b8760835
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 

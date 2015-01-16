@@ -8,26 +8,47 @@
 
 
 
+
+
     <EditText
-        android:id="@+id/edt_number"
+        android:id="@+id/edt_roll_number"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="roll number"
+        android:paddingLeft="10dp"
+        />
 
 
-    <TextView android:text="@string/hello_world"
-        android:id="@+id/txt_message"
-        android:layout_below="@id/edt_number"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:layout_below="@id/edt_roll_number"
         android:layout_marginTop="10dp"
-        android:layout_height="wrap_content" />
+        android:paddingLeft="10dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/edt_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:layout_marginTop="10dp"
+        android:hint="percentage"
+        android:paddingLeft="10dp"
+        />
+
 
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txt_message"
-        android:id="@+id/btn_click_here1"
-        android:text="click here1"
+        android:layout_below="@id/edt_percentage"
+        android:id="@+id/btn_insert_data"
+        android:text="insert into Database"
         android:layout_marginTop="10dp"
         android:background="#f2000000"
         android:textColor="#fff"
@@ -38,14 +59,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_click_here1"
-        android:id="@+id/btn_click_here2"
-        android:text="click here2"
+        android:layout_below="@id/btn_insert_data"
+        android:id="@+id/btn_fetch_data"
+        android:text="fetch from database"
         android:layout_marginTop="10dp"
         android:background="#f2000000"
         android:textColor="#fff"
         />
-
 
 
 </RelativeLayout>

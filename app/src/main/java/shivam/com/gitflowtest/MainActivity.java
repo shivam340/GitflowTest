@@ -4,14 +4,24 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
+
+
+    private Button mBtnClick;
+    private TextView mTxtMessage;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        initUi();
+
     }
 
 
@@ -36,4 +46,18 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+    /**
+     * initializes an Ui components
+     */
+    private void initUi() {
+
+        mBtnClick = (Button) findViewById(R.id.btn_click_here);
+        mTxtMessage = (TextView) findViewById(R.id.txt_message);
+
+    }
+
+
+
 }

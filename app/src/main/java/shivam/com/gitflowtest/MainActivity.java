@@ -61,14 +61,8 @@ public class MainActivity extends ActionBarActivity {
         mTxtMessage = (TextView) findViewById(R.id.txt_message);
         mEdtNumber = (EditText) findViewById(R.id.edt_number);
 
-<<<<<<< HEAD
-        mBtnClick.setOnClickListener(new HandleOnClick(R.id.btn_click_here));
-
-
-=======
         mBtnClick.setOnClickListener(new HandleOnClick(R.id.btn_click_here1));
         mBtnClick2.setOnClickListener(new HandleOnClick(R.id.btn_click_here2));
->>>>>>> 4b04f6fe9233811d1cec3c9cff70b9da3854c33b
     }
 
 
@@ -94,7 +88,6 @@ public class MainActivity extends ActionBarActivity {
 
                 case R.id.btn_click_here2:
 
-<<<<<<< HEAD
                         if( mEdtNumber.getText() != null && mEdtNumber.getText().toString().trim().length()>0 ) {
 
                             try {
@@ -111,10 +104,9 @@ public class MainActivity extends ActionBarActivity {
                             Toast.makeText(getApplicationContext(), " insufficient information.", Toast.LENGTH_SHORT).show();
                         }
 
-=======
-                    Toast.makeText(getApplicationContext(),"on click2", Toast.LENGTH_SHORT).show();
->>>>>>> 4b04f6fe9233811d1cec3c9cff70b9da3854c33b
                     break;
+
+
             }
 
         }

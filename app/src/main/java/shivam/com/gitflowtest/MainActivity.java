@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,7 +15,7 @@ public class MainActivity extends ActionBarActivity {
 
     private Button mBtnClick;
     private TextView mTxtMessage;
-
+    private EditText mEdtNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +58,10 @@ public class MainActivity extends ActionBarActivity {
 
         mBtnClick = (Button) findViewById(R.id.btn_click_here);
         mTxtMessage = (TextView) findViewById(R.id.txt_message);
+        mEdtNumber = (EditText) findViewById(R.id.edt_number);
 
         mBtnClick.setOnClickListener(new HandleOnClick(R.id.btn_click_here));
+
 
     }
 
@@ -80,7 +83,22 @@ public class MainActivity extends ActionBarActivity {
 
                 case R.id.btn_click_here:
 
-                    Toast.makeText(getApplicationContext(),"on click", Toast.LENGTH_SHORT).show();
+                        if( mEdtNumber.getText() != null && mEdtNumber.getText().toString().trim().length()>0 ) {
+
+                            try {
+                                int number = Integer.parseInt(mEdtNumber.getText().toString().trim());
+                                Toast.makeText(getApplicationContext(), "done", Toast.LENGTH_SHORT).show();
+                            }
+                            catch(NumberFormatException ex) {
+
+                                Toast.makeText(getApplicationContext(), "please enter a valid number ", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    else {
+
+                            Toast.makeText(getApplicationContext(), " insufficient information.", Toast.LENGTH_SHORT).show();
+                        }
+
                     break;
             }
 

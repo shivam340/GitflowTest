@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
 
-    private Button mBtnClick;
+    private Button mBtnClick, mBtnClick2;
     private TextView mTxtMessage;
 
 
@@ -55,11 +55,12 @@ public class MainActivity extends ActionBarActivity {
      */
     private void initUi() {
 
-        mBtnClick = (Button) findViewById(R.id.btn_click_here);
+        mBtnClick = (Button) findViewById(R.id.btn_click_here1);
+        mBtnClick2 = (Button) findViewById(R.id.btn_click_here2);
         mTxtMessage = (TextView) findViewById(R.id.txt_message);
 
-        mBtnClick.setOnClickListener(new HandleOnClick(R.id.btn_click_here));
-
+        mBtnClick.setOnClickListener(new HandleOnClick(R.id.btn_click_here1));
+        mBtnClick2.setOnClickListener(new HandleOnClick(R.id.btn_click_here2));
     }
 
 
@@ -78,9 +79,14 @@ public class MainActivity extends ActionBarActivity {
 
             switch(mId) {
 
-                case R.id.btn_click_here:
+                case R.id.btn_click_here1:
 
-                    Toast.makeText(getApplicationContext(),"on click", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"on click1", Toast.LENGTH_SHORT).show();
+                    break;
+
+                case R.id.btn_click_here2:
+
+                    Toast.makeText(getApplicationContext(),"on click2", Toast.LENGTH_SHORT).show();
                     break;
             }
 
